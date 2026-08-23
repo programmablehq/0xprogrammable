@@ -28,6 +28,8 @@
   &nbsp;·&nbsp;
   <a href="https://programmable.market/explore">Explore</a>
   &nbsp;·&nbsp;
+  <a href="https://programmable.market/markets">Prediction markets</a>
+  &nbsp;·&nbsp;
   <a href="https://programmable.market/launch">Create</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/0xprogrammable/hookbuilder">Builder</a>
@@ -42,10 +44,23 @@
 | Goal | Start here |
 | --- | --- |
 | Explore launches and their public records | [Explore](https://programmable.market/explore) |
+| Create or trade a BTC prediction market | [Prediction Markets Beta](https://programmable.market/markets) |
 | Create with an available launch model | [Create](https://programmable.market/launch) |
 | Build and check a Uniswap v4 project | [Programmable v4 Builder](https://github.com/0xprogrammable/hookbuilder) |
 | Submit one completed public revision for review | [Submit a Launch](https://github.com/0xprogrammable/submit-launch) |
 | Integrate verified launch data | [Developer documentation](https://programmable.market/docs/developers) |
+
+## Prediction Markets Beta
+
+The existing token launch models continue to run on Ethereum. Prediction Markets Beta is a separate launch model for
+fully backed BTC/USD binary markets on Robinhood Chain. Each market creates ERC-20 `YES` and `NO` claims, trades them
+through a canonical Uniswap v4 pool and resolves against pinned Chainlink rounds.
+
+[Open Prediction Markets Beta](https://programmable.market/markets)<br />
+[Read the open-source contracts and deployment evidence](https://github.com/0xprogrammable/programmable-prediction-markets)
+
+The deployed V1 source is explorer verified and publicly reproducible. It has not received an independent security
+audit.
 
 ## Build from plain language
 
@@ -79,6 +94,7 @@ Submit the draft only when I explicitly authorize the GitHub write: <idea or pub
 | Repository | What it owns |
 | --- | --- |
 | [programmable](https://github.com/0xprogrammable/programmable) | Application, contracts, public read model and release evidence |
+| [programmable-prediction-markets](https://github.com/0xprogrammable/programmable-prediction-markets) | Prediction market contracts, tests and Robinhood Chain deployment evidence |
 | [hookbuilder](https://github.com/0xprogrammable/hookbuilder) | Agent Skill and local tools for building reproducible Uniswap v4 projects |
 | [submit-launch](https://github.com/0xprogrammable/submit-launch) | Exact revision intake and public review records for one completed project |
 | [submit-template](https://github.com/0xprogrammable/submit-template) | Planned intake for reusable launch templates; submissions are not open yet |
