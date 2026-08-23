@@ -28,6 +28,8 @@
   &nbsp;·&nbsp;
   <a href="https://programmable.market/explore">Explore</a>
   &nbsp;·&nbsp;
+  <a href="https://programmable.market/markets">Prediction markets</a>
+  &nbsp;·&nbsp;
   <a href="https://programmable.market/launch">Create</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/0xprogrammable/hookbuilder">Builder</a>
@@ -42,10 +44,19 @@
 | Goal | Start here |
 | --- | --- |
 | Explore launches and their public records | [Explore](https://programmable.market/explore) |
+| Create or trade a prediction market | [Prediction Markets](https://programmable.market/markets) |
 | Create with an available launch model | [Create](https://programmable.market/launch) |
 | Build and check a Uniswap v4 project | [Programmable v4 Builder](https://github.com/0xprogrammable/hookbuilder) |
 | Submit one completed public revision for review | [Submit a Launch](https://github.com/0xprogrammable/submit-launch) |
 | Integrate verified launch data | [Developer documentation](https://programmable.market/docs/developers) |
+
+## Prediction Markets
+
+Open the product to create or trade a market. The dedicated open-source repository is the source of truth for current
+supported markets, networks, contracts, release evidence and technical boundaries.
+
+[Open Prediction Markets](https://programmable.market/markets)<br />
+[Read the current source and release record](https://github.com/0xprogrammable/programmable-prediction-markets)
 
 ## Build from plain language
 
@@ -79,6 +90,7 @@ Submit the draft only when I explicitly authorize the GitHub write: <idea or pub
 | Repository | What it owns |
 | --- | --- |
 | [programmable](https://github.com/0xprogrammable/programmable) | Application, contracts, public read model and release evidence |
+| [programmable-prediction-markets](https://github.com/0xprogrammable/programmable-prediction-markets) | Prediction market contracts, tests and current release evidence |
 | [hookbuilder](https://github.com/0xprogrammable/hookbuilder) | Agent Skill and local tools for building reproducible Uniswap v4 projects |
 | [submit-launch](https://github.com/0xprogrammable/submit-launch) | Exact revision intake and public review records for one completed project |
 | [submit-template](https://github.com/0xprogrammable/submit-template) | Planned intake for reusable launch templates; submissions are not open yet |
