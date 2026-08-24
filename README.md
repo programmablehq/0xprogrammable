@@ -20,7 +20,7 @@
 
 <p align="center">
   Programmable is an open launch system for Uniswap v4 on Ethereum. Explore public launches, create with an available
-  launch model, or take an idea described in plain language through a documented build and review of one exact revision.
+  launch model, or take a Custom project from a documented build to a wallet-bound launch through the API.
 </p>
 
 <p align="center">
@@ -33,6 +33,8 @@
   <a href="https://programmable.market/launch">Create</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/0xprogrammable/hookbuilder">Builder</a>
+  &nbsp;·&nbsp;
+  <a href="https://programmable.market/developers/custom-launch-api-v1.md">Custom Launch API</a>
   &nbsp;·&nbsp;
   <a href="https://programmable.market/docs">Docs</a>
 </p>
@@ -47,7 +49,9 @@
 | Create or trade a prediction market | [Prediction Markets](https://programmable.market/markets) |
 | Create with an available launch model | [Create](https://programmable.market/launch) |
 | Build and check a Uniswap v4 project | [Programmable v4 Builder](https://github.com/0xprogrammable/hookbuilder) |
-| Submit one completed public revision for review | [Submit a Launch](https://github.com/0xprogrammable/submit-launch) |
+| Create or revoke a wallet-bound API key | [API key management](https://programmable.market/developers/api-keys) |
+| Prepare a Custom launch | [Custom Launch API guide](https://programmable.market/developers/custom-launch-api-v1.md) |
+| Read the versioned launch requirements | [Programmable Launch Policy](https://github.com/0xprogrammable/launch-policy) |
 | Integrate verified launch data | [Developer documentation](https://programmable.market/docs/developers) |
 
 ## Prediction Markets
@@ -78,8 +82,9 @@ The Builder repository owns installation, release verification and the complete 
 enough:
 
 ```text
-Use Programmable v4 Builder. Build and check this project, then prepare its exact application for Submit a Launch.
-Submit the draft only when I explicitly authorize the GitHub write: <idea or public GitHub URL>
+Use Programmable v4 Builder. Build and check this project against the current Programmable Launch Policy, then prepare
+its exact Custom Launch API request. Use the API key from secure local storage and stop before wallet signing or
+broadcast: <idea or public GitHub URL>
 ```
 
 [Install the current Builder release](https://github.com/0xprogrammable/hookbuilder#install-the-immutable-release)<br />
@@ -92,18 +97,18 @@ Submit the draft only when I explicitly authorize the GitHub write: <idea or pub
 | [programmable](https://github.com/0xprogrammable/programmable) | Application, contracts, public read model and release evidence |
 | [programmable-prediction-markets](https://github.com/0xprogrammable/programmable-prediction-markets) | Prediction market contracts, tests and current release evidence |
 | [hookbuilder](https://github.com/0xprogrammable/hookbuilder) | Agent Skill and local tools for building reproducible Uniswap v4 projects |
-| [submit-launch](https://github.com/0xprogrammable/submit-launch) | Exact revision intake and public review records for one completed project |
-| [submit-template](https://github.com/0xprogrammable/submit-template) | Planned intake for reusable launch templates; submissions are not open yet |
+| [launch-policy](https://github.com/0xprogrammable/launch-policy) | Versioned launch requirements, policies and machine-readable evidence contracts |
 | [developers](https://github.com/0xprogrammable/developers) | Discovery manifest, API contracts and direct verification rules for integrations |
 
-## Review one exact revision
+## Launch Custom projects through the API
 
-[Submit a Launch](https://github.com/0xprogrammable/submit-launch) accepts a completed project from its own public
-repository. The application binds the source commit, tree, owner intent, evidence and current launch policy. A source
-change creates a new review target.
+New Custom launches use a wallet-bound API key instead of a GitHub application pull request. The Builder checks the
+exact project against the [Programmable Launch Policy](https://github.com/0xprogrammable/launch-policy) and prepares a
+closed request for the [Custom Launch API](https://programmable.market/developers/custom-launch-api-v1.md).
 
-A valid intake result means the revision is eligible for review. It is not an audit, acceptance, launch authorization,
-deployment, listing, provider guarantee or Uniswap endorsement. Those remain separate states with separate evidence.
+The API validates the submitted commitments and prepares the exact Router action for the API key's bound wallet. An API
+key cannot sign or broadcast a transaction. The wallet controller must review, sign and broadcast the prepared action.
+Preparation is not an audit, safety claim, listing guarantee or Uniswap endorsement.
 
 ## Integrate without guessing
 
@@ -120,6 +125,7 @@ deployment, listing, provider guarantee or Uniswap endorsement. Those remain sep
 [Programmable Developers](https://github.com/0xprogrammable/developers) defines the Router-first verification path,
 versioned manifest, read-only API contracts and failure rules used by external apps. Integrations preserve canonical
 launch identity and treat market data as optional enrichment rather than inventing support from names or metadata.
+This unauthenticated discovery surface is separate from the authenticated Custom Launch API.
 
 [Open the developer documentation](https://programmable.market/docs/developers)<br />
 [Read the public specification](https://github.com/0xprogrammable/developers)
@@ -135,7 +141,9 @@ launch identity and treat market data as optional enrichment rather than inventi
   &nbsp;·&nbsp;
   <a href="https://github.com/0xprogrammable/hookbuilder">Builder</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/0xprogrammable/submit-launch">Launch review</a>
+  <a href="https://programmable.market/developers/custom-launch-api-v1.md">Custom Launch API</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/0xprogrammable/launch-policy">Launch policy</a>
   &nbsp;·&nbsp;
   <a href="https://programmable.market/docs">Docs</a>
   &nbsp;·&nbsp;
