@@ -32,8 +32,6 @@
   &nbsp;·&nbsp;
   <a href="https://programmable.market/launch">Create</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/0xprogrammable/Hookbuilder-Skill">Builder</a>
-  &nbsp;·&nbsp;
   <a href="https://programmable.market/developers/custom-launch-api-v1.md">Custom Launch API</a>
   &nbsp;·&nbsp;
   <a href="https://programmable.market/docs">Docs</a>
@@ -48,7 +46,7 @@
 | Explore launches and their public records | [Explore](https://programmable.market/explore) |
 | Create or trade a prediction market | [Prediction Markets](https://programmable.market/markets) |
 | Create with an available launch model | [Create](https://programmable.market/launch) |
-| Build and check a Uniswap v4 project | [Programmable v4 Builder](https://github.com/0xprogrammable/Hookbuilder-Skill) |
+| Build and package a Custom launch | [Custom launch guide](https://programmable.market/docs/developers/custom-launch) |
 | Create or revoke a wallet-bound API key | [API key management](https://programmable.market/developers/api-keys) |
 | Prepare a Custom launch | [Custom Launch API guide](https://programmable.market/developers/custom-launch-api-v1.md) |
 | Read the versioned launch requirements | [Programmable Launch Policy](https://github.com/0xprogrammable/Launch-Policy) |
@@ -62,32 +60,12 @@ supported markets, networks, contracts, release evidence and technical boundarie
 [Open Prediction Markets](https://programmable.market/markets)<br />
 [Read the current source and release record](https://github.com/0xprogrammable/Prediction-Markets)
 
-## Build from plain language
+## Build a Custom launch
 
-<p align="center">
-  <a href="https://github.com/0xprogrammable/Hookbuilder-Skill">
-    <img
-      src="./assets/profile/programmable-builder-skill-v4.jpg"
-      alt="A path branches into several mechanisms inside the Programmable night garden"
-      width="100%"
-    />
-  </a>
-</p>
-
-[Programmable v4 Builder](https://github.com/0xprogrammable/Hookbuilder-Skill) is a portable Agent Skill for turning an idea
-or an existing repository into a complete project with explicit evidence. It can model hooks, tokens, apps, games,
-services, settlement systems and mixed projects without forcing the idea into a fixed catalog.
-
-The Builder repository owns installation, release verification, and the build-and-check workflow. It does not create or
-submit a Custom Launch API request. A short starting request is enough:
-
-```text
-Use Programmable v4 Builder. Build and check this project against the current Programmable Launch Policy. Stop before
-any API submission, external write, wallet signature, or broadcast: <idea or public GitHub URL>
-```
-
-[Install the current Builder release](https://github.com/0xprogrammable/Hookbuilder-Skill#install-the-builder)<br />
-[Read the Agent Skill guide](https://github.com/0xprogrammable/Hookbuilder-Skill/blob/main/docs/AGENT_SKILL.md)
+Build and test the project with your own tools, then package its artifacts against the live
+[Custom Launch API](https://programmable.market/developers/custom-launch-api-v1.md). Use the
+[Programmable Launch Policy](https://github.com/0xprogrammable/Launch-Policy) for current launch requirements and the
+[Developers repository](https://github.com/0xprogrammable/Developers) for public API and verification contracts.
 
 ## One responsibility per repository
 
@@ -95,15 +73,14 @@ any API submission, external write, wallet signature, or broadcast: <idea or pub
 | --- | --- |
 | [PROGRAMMABLE](https://github.com/0xprogrammable/PROGRAMMABLE) | Application, contracts, public read model and release evidence |
 | [Prediction-Markets](https://github.com/0xprogrammable/Prediction-Markets) | Prediction market contracts, tests and current release evidence |
-| [Hookbuilder-Skill](https://github.com/0xprogrammable/Hookbuilder-Skill) | Agent Skill and local tools for building reproducible Uniswap v4 projects |
 | [Launch-Policy](https://github.com/0xprogrammable/Launch-Policy) | Versioned launch requirements, policies and machine-readable evidence contracts |
 | [Developers](https://github.com/0xprogrammable/Developers) | Discovery manifest, API contracts and direct verification rules for integrations |
 
 ## Launch Custom projects through the API
 
-New Custom launches use a wallet-bound API key instead of a GitHub application pull request. The Builder can build and
-check a project against the [Programmable Launch Policy](https://github.com/0xprogrammable/Launch-Policy). An agent or
-developer then constructs the request from the project artifacts and the live
+New Custom launches use a wallet-bound API key instead of a GitHub application pull request. A developer or agent can
+build and check a project against the [Programmable Launch Policy](https://github.com/0xprogrammable/Launch-Policy), then
+construct the request from the project artifacts and the live
 [Custom Launch API](https://programmable.market/developers/custom-launch-api-v1.md) schema.
 
 The API validates the submitted commitments and prepares the exact Router action for the API key's bound wallet. An API
@@ -138,8 +115,6 @@ This unauthenticated discovery surface is separate from the authenticated Custom
   <a href="https://programmable.market/explore">Explore</a>
   &nbsp;·&nbsp;
   <a href="https://programmable.market/launch">Create</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/0xprogrammable/Hookbuilder-Skill">Builder</a>
   &nbsp;·&nbsp;
   <a href="https://programmable.market/developers/custom-launch-api-v1.md">Custom Launch API</a>
   &nbsp;·&nbsp;
